@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de IMC</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="./js/script.js" defer type="module"></script>
+</head>
+
+<body>
+  <main>
+
+    <div class="alert-error">
+      Digite somente números
+    </div>
+
+    <div class="card">
+      <h1 class="title">Cálculo de IMC</h1>
+
+      <form>
+        <label for="impWeight">Peso (kg)</label>
+        <input type="text" id="impWeight" placeholder="60" />
+
+        <label for="impHeight" class="second-label">Altura (cm)</label>
+        <input type="text" id="impHeight" placeholder="165" />
+
+        <button id="btnCal" type="submit">Calcular IMC <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.1685 6.26205L12.3589 6.26213M12.3589 6.26213L7.64488 1.54808M12.3589 6.26213L7.64488 10.9762"
+              stroke="white" stroke-width="1.20972" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+
+      </form>
+    </div>
+
+    <div class="modal-wrapper">
+      <div class="modal card">
+        <h2 class="title">
+          <button class="close">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_123_97)">
+                <path
+                  d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+                  fill="#0C3440" fill-opacity="0.6" />
+              </g>
+              <defs>
+                <clipPath id="clip0_123_97">
+                  <rect width="24" height="24" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </button>
+          <span>Seu IMC é de 28</span>
+        </h2>
+      </div>
+    </div>
+
+  </main>
+</body>
+
+</html>
